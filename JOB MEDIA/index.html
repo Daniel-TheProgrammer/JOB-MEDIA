@@ -1,0 +1,770 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JOB MEDIA </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="yes.js">
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+         <link href="https://fonts.googleapis.com/css?family=Inconsolata|Permanent+Marker|Lato|Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <!-- all elements starts here -->
+         <div id="loading-tab">
+            <div class="loading-tab-box">
+                <img class="loading-tab-box-img" src="https://image.flaticon.com/icons/svg/145/145802.svg">
+                <h3 class="loading-tab-box-name">
+                    JOB MEDIA
+                </h3>
+            </div>
+        </div>
+        <!--all loading tab elements get fixed-->
+        <div id="notification-tab">
+            <div class="notification-tab-head">
+                <div class="flex-box-text" onclick="notification()">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="flex-input-text">
+                    notification
+                </div>
+                <div class="flex-box-text">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+            <h4 class="notification-date">
+                Today
+            </h4>
+            <div class="notification-box ac">
+                <div class="notification-dp">
+                    <img src="https://api.sololearn.com/Uploads/Avatars/1.jpg">
+                </div>
+                <div class="notification-info">
+                    <h4>Sololearn</h4>
+                    <button class="btn" onclick="follow(this)">
+                        add friend
+                    </button>
+                    <button class="rtn" onclick="remove(0)">
+                        remove
+                    </button>
+                </div>
+                <div class="notification-time">
+                    1hr
+                </div>
+            </div>
+            <div class="notification-box ac">
+                <div class="notification-dp">
+                    <img src="https://image.flaticon.com/icons/svg/921/921071.svg">
+                </div>
+                <div class="notification-info">
+                    <h4>User</h4>
+                    <button class="btn" onclick="follow(this)">
+                        add friend
+                    </button>
+                    <button class="rtn" onclick="remove(1)">
+                        remove
+                    </button>
+                </div>
+                <div class="notification-time">
+                    2hr
+                </div>
+            </div>
+            <div class="notification-box ac">
+                <div class="notification-dp">
+                    <img src="https://image.flaticon.com/icons/svg/1312/1312139.svg">
+                </div>
+                <div class="notification-info">
+                    <h4>Facebook</h4>
+                    <button class="btn" onclick="follow(this)">
+                        add friend
+                    </button>
+                    <button class="rtn" onclick="remove(2)">
+                        remove
+                    </button>
+                </div>
+                <div class="notification-time">
+                    5hr
+                </div>
+            </div>
+            <h4 class="notification-date">
+                Yesterday
+            </h4>
+            <div class="notification-box">
+                <div class="notification-dp">
+                    <img src="https://api.sololearn.com/Uploads/Avatars/14022015.jpg">
+                </div>
+                <div class="notification-info">
+                    <h4>Abhay</h4>
+                    <button class="btn" onclick="follow(this)">
+                        add friend
+                    </button>
+                    <button class="rtn" onclick="remove(3)">
+                        remove
+                    </button>
+                </div>
+                <div class="notification-time">
+                    23hr
+                </div>
+            </div>
+        </div>
+      <!-- all elements of message is placed -->
+      <div id="chat-tab">
+            <div class="chat-head">
+                <div class="chat-back" onclick="chat()">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="chat-name">
+                    <img src="https://api.sololearn.com/Uploads/Avatars/14022015.jpg">
+                <span>Abhay</span>
+                </div>
+                <div class="chat-back">
+                    <i class="fas fa-video"></i>
+                </div>
+            </div>
+            <div class="chat-window">
+                <div class="chat-info">
+                    all messages are end to end encrypted and anyone can't see your message<b>learn more</b>
+                </div>
+            </div>
+            <div class="chat-bar">
+                <div class="chat-cam">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <div class="chat-input">
+                    <div class="chat-screen">
+                        <span>Type message</span>
+                        <i class="fas fa-arrow-up"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--all chat element get placed -->
+        <div id="group-tab">
+            <div class="group-head">
+                <div class="group-back" onclick="group()">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="group-name">
+                    groups
+                </div>
+                <div class="group-back">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+            <div class="group-container">
+                <h4 class="h4"> your groups
+                <span>see all</span>
+                </h4>
+                <div class="scroll-group">
+                    <div class="card">
+                        <img src="https://i.imgur.com/6jQE76P.jpg">
+                        <h4>AIMU</h4>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.imgur.com/h8fs5A3.jpg">
+                        <h4>SoloIndia</h4>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.imgur.com/yacJjUo.jpg">
+                        <h4>SL friends</h4>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/3278000/pexels-photo-3278000.jpeg?cs=srgb&dl=person-touching-cup-of-coffee-and-plate-with-food-3278000.jpg&fm=jpg">
+                        <h4>Food</h4>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/4054069/pexels-photo-4054069.jpeg?cs=srgb&dl=photo-of-man-riding-bicycle-4054069.jpg&fm=jpg">
+                        <h4>Bike</h4>
+                    </div>
+                    <div class="card">
+                        <img src="https://api.sololearn.com/Uploads/Avatars/1.jpg">
+                        <h4>Sololearn</h4>
+                    </div>
+                    <div class="card">
+                        <img src="https://image.flaticon.com/icons/svg/1312/1312139.svg">
+                        <h4>Facebook</h4>
+                    </div>
+                    <div class="card">
+                        <img src="https://image.flaticon.com/icons/svg/2760/2760147.svg">
+                        <h4>Covid</h4>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.ibb.co/qgQ74cb/img-1.png">
+                        <h4>Pizza</h4>
+                    </div>
+                </div>
+                <div class="group-box">
+                    <div class="box-head">
+                        <img class="b-img" src="https://api.sololearn.com/Uploads/Avatars/14022015.jpg">
+                        <h4>Create your own's group here</h4>
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+                    <img class="bk-img" src="https://lh3.googleusercontent.com/ceJflFysqTQjWuY0pnO7ab6OiBf-7uJdCJ_9EOL14pHIT7pECE-yi5fL9PUgNuQMNk3kAnhKNw=w640-h400-e365">
+                </div>
+            </div>
+        </div>
+        <!-- all group element get placed -->
+         <div id="search-tab">
+            <div class="search-tab-head">
+                <div class="search-tab-head-h">
+                    <div class="flex-box" onclick="search()">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="flex-input">
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div class="flex-box">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="search-tab-content">
+                    <div>Trending</div>
+                    <div>Lockdown</div>
+                    <div>Sololearn</div>
+                    <div>Coronavirus</div>
+                    <div>Doctors</div>
+                    <div>W.H.O.</div>
+                    <div>Live stats</div>
+                    <div>Ronaldo</div>
+                    <div>Virat</div>
+                    <div>T-series</div>
+                </div>
+            </div>
+            <div class="search-tab-time">
+                <img src="https://image.flaticon.com/icons/svg/2089/2089679.svg">
+                <h4>No search history</h4>
+            </div>
+        </div>
+        <!-- all search tab element get placed-->
+        <div id="profile-tab">
+            <div class="profile-head">
+              <div class="profile-back" onclick="profile()">
+                  <i class="fas fa-chevron-left"></i>
+              </div>
+              <div class="profile-search">
+                  <i class="fas fa-search"></i>
+                  Search
+              </div>
+              <div class="profile-menu">
+                  <i class="fas fa-bars"></i>
+              </div>
+            </div>
+            <div class="real-profile">
+                <div class="bg-profile">
+                    <img src="https://images.pexels.com/photos/1666021/pexels-photo-1666021.jpeg?cs=srgb&dl=scenic-view-of-mountain-1666021.jpg&fm=jpg" id="p-bg">
+                </div>
+                <div class="img-profile">
+                    <img src="https://api.sololearn.com/Uploads/Avatars/14022015.jpg">
+                </div>
+                <h2 class="profile-n">
+                    Abhay
+                </h2>
+                <p class="profile-d">
+                    Hi i'm Abhay. I joined sololearn for increasing my skills in coding.
+                </p>
+                <div class="profile-icon">
+                    <div>
+                        <img src="https://image.flaticon.com/icons/svg/1237/1237946.svg">
+                        <p>add story</p>
+                    </div>
+                     <div>
+                        <img src="https://image.flaticon.com/icons/svg/1828/1828911.svg">
+                        <p>edit</p>
+                    </div>
+                    <div>
+                        <img src="https://image.flaticon.com/icons/svg/565/565654.svg">
+                        <p>view as</p>
+                    </div>
+                     <div>
+                        <img src="https://image.flaticon.com/icons/svg/561/561184.svg">
+                        <p>activity</p>
+                    </div>
+                     
+                     <div>
+                        <img src="https://image.flaticon.com/icons/svg/60/60969.svg">
+                        <p>more</p>
+                    </div>
+                </div>
+                <div class="profile-dea">
+                    <p>
+                        <i class="fas fa-home"></i> lives in <b>India</b>
+                    </p>
+                    <p>
+                        <i class="fas fa-briefcase"></i> working at <b>home due to coronavirus</b>
+                    </p>
+                    <p>
+                        <i class="fas fa-heart"></i> relation status <b>I'm too small for this</b>
+                    </p>
+                    <p>
+                        <i class="fas fa-user"></i> career status <b>student at D.A.V.</b>
+                    </p>
+                    <p>
+                        <i class="fas fa-share-alt"></i> Account status <b> I not use any social media app</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- all profile element get placed -->
+        <div id="menu-tab">
+            <div class="menu-tab-head">
+                <div class="flex-box-text" onclick="menu()">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="flex-input-text">
+                    settings
+                </div>
+                <div class="flex-box-text">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+            <div class="menu-tab-con">
+                <div class="menu-tab-bar">
+                    <div class="div-15">
+                        <img class="icon">
+                    </div>
+                    <div class="div-70">
+                        Mode
+                    </div>
+                    <div class="div-15">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="menu-tab-bar">
+                    <div class="div-15">
+                        <img class="icon">
+                    </div>
+                    <div class="div-70">
+                        Mode
+                    </div>
+                    <div class="div-15">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="menu-tab-bar">
+                    <div class="div-15">
+                        <img class="icon">
+                    </div>
+                    <div class="div-70">
+                        Mode
+                    </div>
+                    <div class="div-15">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="menu-tab-bar">
+                    <div class="div-15">
+                        <img class="icon">
+                    </div>
+                    <div class="div-70">
+                        Mode
+                    </div>
+                    <div class="div-15">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="menu-tab-bar">
+                    <div class="div-15">
+                        <img class="icon">
+                    </div>
+                    <div class="div-70">
+                        Mode
+                    </div>
+                    <div class="div-15">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="menu-tab-bar">
+                    <div class="div-15">
+                        <img class="icon">
+                    </div>
+                    <div class="div-70">
+                        Mode
+                    </div>
+                    <div class="div-15">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="menu-tab-bar">
+                    <div class="div-15">
+                        <img class="icon">
+                    </div>
+                    <div class="div-70">
+                        Mode
+                    </div>
+                    <div class="div-15">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="menu-tab-bar">
+                    <div class="div-15">
+                        <img class="icon">
+                    </div>
+                    <div class="div-70">
+                        Mode
+                    </div>
+                    <div class="div-15">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="menu-tab-bar">
+                    <div class="div-15">
+                        <img class="icon">
+                    </div>
+                    <div class="div-70">
+                        Mode
+                    </div>
+                    <div class="div-15">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="menu-tab-bar">
+                    <div class="div-15">
+                        <img class="icon">
+                    </div>
+                    <div class="div-70">
+                        Mode
+                    </div>
+                    <div class="div-15">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="menu-tab-bar">
+                    <div class="div-15">
+                        <img class="icon">
+                    </div>
+                    <div class="div-70">
+                        Mode
+                    </div>
+                    <div class="div-15">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="menu-tab-bar">
+                    <div class="div-15">
+                        <img class="icon">
+                    </div>
+                    <div class="div-70">
+                        Mode
+                    </div>
+                    <div class="div-15">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="menu-tab-bar">
+                    <div class="div-15">
+                        <img class="icon">
+                    </div>
+                    <div class="div-70">
+                        Mode
+                    </div>
+                    <div class="div-15">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="menu-tab-bar">
+                    <div class="div-15">
+                        <img class="icon">
+                    </div>
+                    <div class="div-70">
+                        Mode
+                    </div>
+                    <div class="div-15">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="menu-tab-bar">
+                    <div class="div-15">
+                        <img class="icon">
+                    </div>
+                    <div class="div-70">
+                        Mode
+                    </div>
+                    <div class="div-15">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- all menu item get placed -->
+        
+        <div id="tere-tab">
+            <div class="tere">
+                <hr>
+                <div class="tere-hub">
+                    <div class="tere-back" onclick="terebackh()">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="tere-dp">
+                        <img id="tere-d" src="https://api.sololearn.com/Uploads/Avatars/14022015.jpg">
+                    </div>
+                    <div class="tere-name">
+                        <h4 id="tere-naam">
+                            Abhay
+                        </h4>
+                        <p>just now</p>
+                    </div>
+                    <div class="tere-back">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+            </div>
+            <img id="tere-img">
+            <div class="tere-div">
+                <img src="https://image.flaticon.com/icons/svg/1370/1370907.svg">
+            </div>
+        </div>
+        <!-- all story item get placed -->
+        
+        <div id="home-tab">
+            <div class="header">
+                <div class="first-header">
+                    <h2>
+                       JOB MEDIA
+                    </h2>
+                    <div onclick="searchby()">
+                        <img class="fb">
+                    </div>
+                    <div onclick="chatby()">
+                        <img class="fb">
+                    </div>
+                </div>
+                <div class="second-header">
+                    <div>
+                        <img class="fb">
+                    </div>
+                    <div onclick="profileby()">
+                        <img class="fb">
+                    </div>
+                    <div onclick="groupby()">
+                        <img class="fb">
+                    </div>
+                    <div onclick="notificationby()">
+                        <img class="fb">
+                    </div>
+                    <div onclick="menuby()">
+                        <img class="fb">
+                    </div>
+                </div>
+            </div>
+            <!-- home-tab story window -->
+            <div class="fb-story">
+                <div class="fb-item" onclick="terestory(0)">
+                    <img class="fb-user ad">
+                    <img class="fb-img">
+                    <div class="fb-name">
+                        Add story
+                    </div>
+                </div>
+                <div class="fb-item" onclick="terestory(1)">
+                    <img class="fb-user">
+                    <img class="fb-img">
+                    <div class="fb-name">
+                        Add story
+                    </div>
+                </div>
+                <div class="fb-item" onclick="terestory(2)">
+                    <img class="fb-user">
+                    <img class="fb-img">
+                    <div class="fb-name">
+                        Add story
+                    </div>
+                </div>
+                <div class="fb-item" onclick="terestory(3)">
+                    <img class="fb-user">
+                    <img class="fb-img">
+                    <div class="fb-name">
+                        Add story
+                    </div>
+                </div>
+                <div class="fb-item" onclick="terestory(4)">
+                    <img class="fb-user">
+                    <img class="fb-img">
+                    <div class="fb-name">
+                        Add story
+                    </div>
+                </div>
+                <div class="fb-item" onclick="terestory(5)">
+                    <img class="fb-user">
+                    <img class="fb-img">
+                    <div class="fb-name">
+                        Add story
+                    </div>
+                </div>
+            </div>
+            <!-- story is finished-->
+            <div class="fb-post">
+                <div class="fb-post-user">
+                    <div class="post-dp">
+                        <img class="post-d">
+                    </div>
+                    <div class="post-info">
+                        <h4 class="post-n">Abhay</h4>
+                        <p>just now</p>
+                    </div>
+                    <div class="post-m">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <div class="fb-post-bg">
+                    <img class="post-bg">
+                </div>
+                <div class="fb-post-foot">
+                    <div class="post-react">
+                        <img class="sl">  
+                        <img class="sb">
+                        <span>1k comments</span>
+                    </div>
+                    <div class="post-share">
+                        share <i class="fas fa-share"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="fb-post">
+                <div class="fb-post-user">
+                    <div class="post-dp">
+                        <img class="post-d">
+                    </div>
+                    <div class="post-info">
+                        <h4 class="post-n">Abhay</h4>
+                        <p>2 hrs ago</p>
+                    </div>
+                    <div class="post-m">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <div class="fb-post-bg">
+                    <img class="post-bg">
+                </div>
+                <div class="fb-post-foot">
+                    <div class="post-react">
+                        <img class="sl">  
+                        <img class="sb">
+                        <span>2k comments</span>
+                    </div>
+                    <div class="post-share">
+                        share <i class="fas fa-share"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="fb-post">
+                <div class="fb-post-user">
+                    <div class="post-dp">
+                        <img class="post-d">
+                    </div>
+                    <div class="post-info">
+                        <h4 class="post-n">Abhay</h4>
+                        <p>5 hrs ago</p>
+                    </div>
+                    <div class="post-m">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <div class="fb-post-bg">
+                    <img class="post-bg">
+                </div>
+                <div class="fb-post-foot">
+                    <div class="post-react">
+                        <img class="sl">  
+                        <img class="sb">
+                        <span>3k comments</span>
+                    </div>
+                    <div class="post-share">
+                        share <i class="fas fa-share"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="fb-post">
+                <div class="fb-post-user">
+                    <div class="post-dp">
+                        <img class="post-d">
+                    </div>
+                    <div class="post-info">
+                        <h4 class="post-n">Abhay</h4>
+                        <p>1 day ago</p>
+                    </div>
+                    <div class="post-m">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <div class="fb-post-bg">
+                    <img class="post-bg">
+                </div>
+                <div class="fb-post-foot">
+                    <div class="post-react">
+                        <img class="sl">  
+                        <img class="sb">
+                        <span>4k comments</span>
+                    </div>
+                    <div class="post-share">
+                        share <i class="fas fa-share"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="fb-post">
+                <div class="fb-post-user">
+                    <div class="post-dp">
+                        <img class="post-d">
+                    </div>
+                    <div class="post-info">
+                        <h4 class="post-n">Abhay</h4>
+                        <p>1 day ago</p>
+                    </div>
+                    <div class="post-m">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <div class="fb-post-bg">
+                    <img class="post-bg">
+                </div>
+                <div class="fb-post-foot">
+                    <div class="post-react">
+                        <img class="sl">  
+                        <img class="sb">
+                        <span>5k comments</span>
+                    </div>
+                    <div class="post-share">
+                        share <i class="fas fa-share"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- post section completed -->
+            <div class="real-foot">
+                The <b>Abhay</b> work
+            </div>
+        </div>
+        <!--all elements of home is finished -->
+        <script type="text/javascript">
+             const backsmall = document.querySelectorAll(".fb-user") ; 
+             const ddp = document.querySelectorAll(".post-d") ;
+             const bbg = document.querySelectorAll(".post-bg");
+             const sl = document.querySelectorAll(".sl") ;
+             const sb = document.querySelectorAll(".sb") ;
+             backsmall.forEach(simg => {
+                simg.onerror = function(){
+                    this.src = "https://image.flaticon.com/icons/svg/921/921071.svg";
+                }
+            })
+            ddp.forEach(d =>{
+                d.onerror = function(){
+                    this.src = "https://image.flaticon.com/icons/svg/921/921071.svg";
+                }
+            })
+            bbg.forEach(b =>{
+                b.onerror = function(){
+                    this.src = "https://image.flaticon.com/icons/svg/2728/2728237.svg";
+                }
+            })
+            function addreact(){
+                for(let x = 0 ; x < 5 ; x++){
+                    sl[x].src = "https://i.imgur.com/wVAJS8T_d.jpg?maxwidth=640&shape=thumb&fidelity=medium";
+                    sb[x].src = "https://i.imgur.com/y7qZQS3_d.jpg?maxwidth=640&shape=thumb&fidelity=medium";
+                }
+            }
+            setTimeout(addreact , 100);
+         </script>
+    </body>
+</html>
+
+
+
+
